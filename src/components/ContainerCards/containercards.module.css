@@ -1,0 +1,42 @@
+.cards__container {
+    color: #fff;
+    margin: 0 70px;
+}
+
+.cards {
+    width: 250px;
+    height: 300px;
+    background-color: #404258;
+    display: inline-table;   
+     justify-content: space-between;
+    margin: 20px 40px;
+    box-shadow: 20px 10px 5px rgba(0, 0, 0, 0.075);
+    border-radius: 5px;
+}
+
+.cards__img {
+    width: 250px;
+    height: 150px;
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 15px;
+}
+
+.continents__name {
+    margin: 30px 20px 0 15px;
+    font-size: 1.3rem;
+}
+
+.countries__details {
+    margin: 20px 0 5px 15px;
+}
+
+p {
+    margin: 8px 0;
+    font-size: 0.8rem;
+}
+
+p span {
+    font-size: 0.8rem;
+    color: rgb(194, 194, 194);
+}
+
