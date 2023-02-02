@@ -1,0 +1,21 @@
+.nav__container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav__bar {
+    display: flex;
+    font-size: 1.3rem;
+    padding: 1.5rem 3rem;
+    background-color: #404258;
+    box-shadow: 0 7px 5px rgba(0, 0, 0, 0.179);
+}
+
+.logo__name {
+    font-weight: bold;
+    color: #fff;
+}
