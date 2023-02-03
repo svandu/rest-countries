@@ -3,6 +3,9 @@ import React, {useState, useEffect} from "react";
 //axios
 import axios from "axios";
 
+//links
+import { Link } from "react-router-dom"
+
 //styles
 import styles from "./individualcard.module.css";
 
@@ -23,7 +26,9 @@ function IndividualCard() {
 
   return (
     <div className={styles.card__maincontainer}>
-    <button className={styles.back__btn}>Back</button>
+    <Link to='/MainContainer'>
+        <button className={styles.back__btn}>Back</button>  
+    </Link>
 
   {countries.map((country) => (
       <div className={styles.country__info} key={country.id}>

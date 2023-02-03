@@ -10,6 +10,7 @@
     box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.201);
     border: 15px;
     margin: 15px 120px;
+    cursor: pointer;
 }
 
 .country__info {
