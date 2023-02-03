@@ -1,0 +1,46 @@
+.card__maincontainer {
+    margin: 100px 70px;
+}
+
+.back__btn {
+    padding: 8px 30px;
+    border: none;
+    background-color: #404258;
+    color: #fff;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.201);
+    border: 15px;
+    margin: 15px 120px;
+}
+
+.country__info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flag__img {
+    width: 500px;
+    margin: 75px 0;
+}
+
+.about__country {
+    display: flex;
+    margin: 75px 0;
+}
+
+.info__partone p{
+    margin-bottom: 20px;
+}
+
+.info__partone p:nth-child(1) {
+    margin: 0 0 40px 15px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.info__parttwo {
+    margin-top: 60px;
+}
+
+.info__parttwo p {
+    margin: 15px 0;
+}
