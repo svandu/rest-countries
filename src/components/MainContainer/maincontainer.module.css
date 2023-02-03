@@ -21,6 +21,10 @@
     padding: 10px 20px;
 }
 
+.region__name {
+    color: #fff;
+}
+
 .cards {
     width: 250px;
     height: 300px;
@@ -37,10 +41,6 @@
     height: 150px;
     border-radius: 5px 5px 0 0;
     margin-bottom: 15px;
-}
-
-.name {
-    /* margin: 30px 20px 0 15px; */
 }
 
 .countries--details {

@@ -56,9 +56,11 @@ function MainContainer() {
         {/* filter field */}
 
         <div className={styles.filter__container}>
-            <select name="filter" className={styles.country__filter}>
-              <option value="filter_by_region">Filter by Region</option>
-            </select>
+              <select name="filter" className={styles.country__filter}>
+
+                <option value='filter_by_region' className={styles.region__name}>filter by region</option>
+
+             </select>
         </div>
 
     </div>
