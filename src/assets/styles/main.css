@@ -5,3 +5,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.continents--name {
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.para {
+    color: #fff;
+}
+
+.country--detail {
+    font-size: 0.8rem;
+    color: rgb(194, 194, 194);
+}
