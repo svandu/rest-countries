@@ -19,6 +19,7 @@ function App() {
         <Routes>
               <Route path='/' element={<MainContainer />}></Route>
               <Route path='/IndividualCard' element={<IndividualCard />}></Route>
+              <Route path='/MainContainer' element={<MainContainer/>}></Route>
           </Routes>
       </div>
     </div>
