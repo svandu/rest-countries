@@ -1,6 +1,6 @@
 # rest-countries
 
-![Country](https://www.pngitem.com/pimgs/m/107-1074277_world-map-round-png-png-download-world-map.png)
+![Country](./public/assets/img/Screenshot_20230205_005943.png)
 
 # Feature
 
