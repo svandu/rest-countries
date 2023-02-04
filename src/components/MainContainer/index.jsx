@@ -15,13 +15,14 @@ function MainContainer() {
 
   const [countries, setCountries] = useState([]);
   const [searchApiData, setSearchApiData] = useState([]);
+  const [options,setOptions] = useState();
   const [filterVal, setFilterVal] = useState('');
 
   useEffect(() => {
     axios
       .get("https://restcountries.com/v3.1/all")
       .then((res) => {
-        console.log(res);
+        console.log(res[0]);
         setCountries(res.data);
         setSearchApiData(res.data);
       })
@@ -56,16 +57,18 @@ function MainContainer() {
         {/* filter field */}
 
         <div className={styles.filter__container}>
-              <select name="filter" className={styles.country__filter}>
-
-                <option value='filter_by_region' className={styles.region__name}>filter by region</option>
-
+              <select name="filter" className={styles.country__filter} onChange={(e)=>setOptions(e.target.value)}>
+              {
+                countries.map((opts,i)=><option key={i}>{opts.region}</option>)
+              }
              </select>
         </div>
 
     </div>
 
     {/* container cards */}
+      
+      <div className={styles.card__container}>
 
       {countries.map((country) => (
 
@@ -81,7 +84,8 @@ function MainContainer() {
             </div>
           </div>
         </Link>
-      ))}     
+        ))} 
+      </div>
 
     </div>
   );
