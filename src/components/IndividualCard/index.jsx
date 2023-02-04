@@ -14,7 +14,7 @@ function IndividualCard() {
 
   useEffect(() => {
     axios
-      .get("https://restcountries.com/v3.1/all")
+      .get(`https://restcountries.com/v3.1/all`)
       .then((res) => {
         console.log(res);
         setCountries(res.data);
@@ -24,8 +24,10 @@ function IndividualCard() {
       });
   }, []);
 
+
   return (
     <div className={styles.card__maincontainer}>
+
     <Link to='/MainContainer'>
         <button className={styles.back__btn}>Back</button>  
     </Link>
@@ -41,35 +43,35 @@ function IndividualCard() {
         <div className={styles.about__country}>
 
           <div className={styles.info__partone}>
-            <p className="name continents--name">Belgium</p>  
+            <p className="name continents--name">{country.continents}</p>  
             <p className="para nativename">
-              Native Name: <span className="country--detail"> Beigie</span>
+              Native Name: <span className="country--detail"></span>
             </p>
             <p className="para population">
-              Population: <span className="country--detail">11,319,511</span>
+              Population: <span className="country--detail">{country.population}</span>
             </p>
             <p className="para region">
-              Region: <span className="country--detail">Europe</span>
+              Region: <span className="country--detail">{country.region}</span>
             </p>
             <p className="para subregion">
               Sub Region:{" "}
-              <span className="country--detail"> Western Europe</span>
+              <span className="country--detail">{country.subregion}</span>
             </p>
             <p className="para capital">
-              Capital: <span className="country--detail"> Brussels</span>
+              Capital: <span className="country--detail">{country.capital}</span>
             </p>
           </div>
 
           <div className={styles.info__parttwo}>
             <p className="para topleveldomain">
-              Top Level Domain: <span className="country--detail">.be</span>
+              Top Level Domain: <span className="country--detail"></span>
             </p>
-            <p className="para nativename">
-              Currencies: <span className="country--detail">Euro</span>
+            <p className="para currencies">
+              Currencies: <span className="country--detail"></span>
             </p>
-            <p className="para nativename">
+            <p className="para language">
               Language:{" "}
-              <span className="country--detail">Dutch, French, German</span>
+              <span className="country--detail">{country.language}</span>
             </p>
           </div>
         </div>

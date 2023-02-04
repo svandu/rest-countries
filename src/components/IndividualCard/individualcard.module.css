@@ -45,3 +45,35 @@
 .info__parttwo p {
     margin: 15px 0;
 }
+
+@media only screen and (min-width: 200px) and (max-width: 767px) {
+    
+    .country__info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .back__btn {
+        margin-left: 15px;
+    }
+
+    .flag__img{
+        width: 300px;
+        margin-left: 0;
+    }
+
+    .about__country {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .info__partone{
+        border: 1px solid red;
+    }
+
+    .info__parttwo {
+        padding: 20px;
+        margin-top: 10px;
+    }
+
+}
