@@ -1,6 +1,6 @@
 # rest-countries
 
-![Country](https://www.google.com/url?sa=i&url=https%3A%2F%2Fimgbin.com%2Fpng%2FZhyNRj2c%2Fminecraft-earth-globe-world-map-png&psig=AOvVaw0Y3nm09ru24zQUPSiRubGl&ust=1675625518542000&source=images&cd=vfe&ved=0CA8QjRxqFwoTCOCC7dnN_PwCFQAAAAAdAAAAABAJ)
+![Country](https://www.pngitem.com/pimgs/m/107-1074277_world-map-round-png-png-download-world-map.png)
 
 # Feature
 
