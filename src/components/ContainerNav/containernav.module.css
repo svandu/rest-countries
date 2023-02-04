@@ -9,10 +9,19 @@
 
 .nav__bar {
     display: flex;
+    justify-content: space-between;
     font-size: 1.3rem;
-    padding: 1.5rem 3rem;
     background-color: #404258;
     box-shadow: 0 7px 5px rgba(0, 0, 0, 0.179);
+    padding: 1.5rem 3rem;
+}
+
+.dark__btn {
+    border: none;
+    background-color: #404258;
+    color: #fff;
+    font-size: 1rem;    
+    cursor: pointer;
 }
 
 .logo__name {
