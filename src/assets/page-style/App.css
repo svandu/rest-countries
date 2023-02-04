@@ -8,3 +8,17 @@
     overflow: scroll;
     overflow-x: hidden;
 }
+
+.container-navbar {
+    color: #181D31;
+    background-color: #404258;
+    box-shadow: 0 7px 5px rgba(0, 0, 0, 0.179);
+}
+
+#light {
+    background-color: #c1c1c1;
+}
+
+#dark {
+    background-color: #181D31;
+} 
