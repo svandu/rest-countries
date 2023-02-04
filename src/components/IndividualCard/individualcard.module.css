@@ -67,10 +67,6 @@
         flex-direction: column;
     }
 
-    .info__partone{
-        border: 1px solid red;
-    }
-
     .info__parttwo {
         padding: 20px;
         margin-top: 10px;
