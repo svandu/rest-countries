@@ -15,6 +15,7 @@ function MainContainer() {
 
   const [countries, setCountries] = useState([]);
   const [searchApiData, setSearchApiData] = useState([]);
+  const [searchFilters, setSearchFilters] = useState([]);
   const [options,setOptions] = useState();
   const [filterVal, setFilterVal] = useState('');
 
@@ -22,7 +23,7 @@ function MainContainer() {
     axios
       .get("https://restcountries.com/v3.1/all")
       .then((res) => {
-        console.log(res[0]);
+        console.log(res);
         setCountries(res.data);
         setSearchApiData(res.data);
       })
@@ -52,14 +53,14 @@ function MainContainer() {
         {/* search field */}
         <div className={styles.search__field}>
             <input type="text" placeholder="search for a country..." className={styles.search__bar} value={filterVal} onInput={(e)=>handleFilter(e)} /> 
-        </div>
+        </div>  
 
         {/* filter field */}
 
         <div className={styles.filter__container}>
               <select name="filter" className={styles.country__filter} onChange={(e)=>setOptions(e.target.value)}>
               {
-                countries.map((opts,i)=><option key={i}>{opts.region}</option>)
+                searchFilters.map((opts,i)=><option key={i}>{opts.region}</option>)
               }
              </select>
         </div>
@@ -73,7 +74,7 @@ function MainContainer() {
       {countries.map((country) => (
 
         <Link to='/IndividualCard'>
-          <div className={styles.cards} key={country.id}>
+          <div className={styles.cards} key={country.id}>{options}
             <img src={country.flags.png} className={styles.cards__img} />
             <span className="name continents--name">{country.continents}</span>
 
